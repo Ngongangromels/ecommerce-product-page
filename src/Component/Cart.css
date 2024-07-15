@@ -1,0 +1,41 @@
+.img-cart {
+    height: 50px;
+    width: 50px;
+    border-radius: 16%;
+}
+
+.desc-cart {
+    position: relative;
+    float: right;
+    left: -100px;
+    padding: 0;
+    color:  hsl(219, 9%, 45%);
+    font-size: 16px;
+}
+
+.desc-cart strong {
+    color: hsl(220, 13%, 13%);
+    font-weight:  900;
+}
+
+.desc-cart img {
+    position: absolute;
+    left: 250px;
+    top: 3px;
+}
+/* position: 'absolute',
+            background: 'hsl(0, 0%, 100%)',
+            top: '65px',
+            right: '80px',
+            width: '400px',
+            borderRadius: '15px',
+            boxShadow:' inset 1px 1px 1px 1px hsl(220, 14%, 75%)' */
+.cart {
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    top: 65px;
+    right: 80px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: inset 1px 1px 1px 1px hsl(220, 14%, 75%);
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+.body-bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.body-bloc1 {
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.body-bloc2 {
+    margin-top: 210px;
+    margin-right: 450px;
+}
+
+.text-bloc {
+    font-size: 18px;
+    font-family: "Kumbh" sans-serif;
+    font-weight: 500;
+    color: hsl(220, 14%, 75%);
+}
+
+ h1 {
+    font-size: 40px;
+}
+
+.price-product{
+    background-color: black;
+}
+
+.img-bloc {
+    height: 450px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.catalogue-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: -40px;
+} 
+
+.catalogue-product img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;    
+}
+
+.old-price {
+    /* style={{textDecoration: 'line-through', color: ', fontWeight:400}} */
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+    font-weight: 400;
+}
+
+.discount-price {
+    /* style={{fontSize: '16px', color:'hsl(0, 0%, 100%)', fontWeight: 400, marginLeft: '15px', background: 'hsl(220, 13%, 13%)', borderRadius: '4px'}} */
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-left: 20px;
+    background: hsl(220, 13%, 13%);
+    border-radius: 4px;
+}
+
+.new-price {
+    /* style={{fontWeight: 900, fontSize: '25px'}} */
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.bloc-btn {
+    margin-top: 20px;
+}
+
+.bloc-btn button {
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.bloc-btn1 {
+    height: 49px;
+    width: 130px;
+    background:  hsl(223, 64%, 98%);
+}
+
+.btn-plus {
+    position: relative;
+    right: 20px;
+    top: -2px;
+}
+
+.btn-minus {
+    position: relative;
+    left: 20px;
+}
+
+.bloc-btn2 {
+    height: 50px;
+    width: 280px;
+    background: hsl(26, 100%, 55%);
+}
+
+.bloc-btn2 img {
+    color: hsl(220, 13%, 13%);
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.bloc-btn2 span {
+    color: hsl(220, 13%, 13%);
+    font-weight: 600;
+}
