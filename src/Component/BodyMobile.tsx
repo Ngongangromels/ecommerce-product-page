@@ -71,8 +71,8 @@ interface Props   {
                         
                         <div className="slide_direction-mobile">
                             
-                            <img style={{left: '70%'}} className="left-mobile" onClick={handleNext }  src={iconNext} alt="" />  
-                            <img style={{right: '70%'}}  className="right-mobile" onClick={handlePrevious}  src={iconPrevious} alt="" />   
+                            <img style={{ left: '70%'}} className="left-mobile" onClick={handleNext }  src={iconNext} alt="" />  
+                            <img style={{ right: '70%'}}  className="right-mobile" onClick={handlePrevious}  src={iconPrevious} alt="" />   
                         </div>
                         <div className="carousel-indicator-mobile ">
                         <ul className="carousel-catalogue-mobile">
