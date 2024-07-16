@@ -3,12 +3,10 @@ import { create } from 'zustand'
 import './App.css';
 import  {NavBar }from './Component/NavBar';
 import { Body } from './Component/Body';
+import { NavBarMobile } from './Component/NavBarMobile'
+import { BodyMobile } from './Component/BodyMobile'
+import { useMediaQuery } from 'react-responsive'
 import { buttonContext } from "./Context/butonContext";
-import { count } from 'console';
-// import imageProduct1 from '../images/imageProduct1.jpg'
-// import imageProduct2 from '../images/imageProduct2.jpg'
-// import imageProduct3 from '../images/imageProduct3.jpg'
-// import imageProduct4 from '../images/imageProduct4.jpg'
 
  type State = {
   count: number
@@ -23,7 +21,7 @@ import { count } from 'console';
  const useCountStore = create<State>((set, get) => ({
   cart: [],
   count: 1,
-  increment: () => set((state) => ({count: state.count + 1})),
+  increment: () => set((state) => ({count: state.count - 1})),
   decrement: () => set((state) => ({count: state.count + 1})),
   addProduct: (count: number, image: any) =>  { const existingProductIndex = get().cart.findIndex(
     (item) => item.image === image
@@ -48,7 +46,6 @@ import { count } from 'console';
 
  }))
 
-
 function App() {
   const [open, setOpen] = useState(false)
   const count = useCountStore((state) => state.count)
@@ -62,10 +59,21 @@ function App() {
 const handleOpen = () => {
   setOpen(!open)
 }
-
+const isDesktopOrMobile = useMediaQuery({query: '(max-width: 400px)'})
   return (
     <div className="">
-
+      {isDesktopOrMobile ? (
+        <div>
+             <NavBarMobile onDeleteProduct={deleteProduct} onCleanCart={cleanCart} count={count} cart={cart}  />
+         <buttonContext.Provider value={{
+          showBackground: open,
+          onOpen: handleOpen,
+         }}>
+             <BodyMobile onAddProduct={addProduct} count={count} onIncrease={increment} onDecrease={decrement} />
+         </buttonContext.Provider>
+        </div>
+      ): (
+      <div>
         <NavBar onDeleteProduct={deleteProduct} onCleanCart={cleanCart} count={count} cart={cart}  />
          <buttonContext.Provider value={{
           showBackground: open,
@@ -73,8 +81,8 @@ const handleOpen = () => {
          }}>
              <Body onAddProduct={addProduct} count={count} onIncrease={increment} onDecrease={decrement} />
          </buttonContext.Provider>
-           
-         
+      </div>
+    ) }
     </div>
   );
 }

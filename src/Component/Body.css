@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 .body-bloc {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -44,6 +46,7 @@
     justify-content: space-between;
     list-style-type: none;
     margin-left: -40px;
+    cursor: pointer;
 } 
 
 .catalogue-product img {
@@ -53,7 +56,6 @@
 }
 
 .old-price {
-    /* style={{textDecoration: 'line-through', color: ', fontWeight:400}} */
     text-decoration: line-through;
     color: hsl(220, 14%, 75%);
     font-weight: 400;
@@ -70,7 +72,6 @@
 }
 
 .new-price {
-    /* style={{fontWeight: 900, fontSize: '25px'}} */
     font-weight: 700;
     font-size: 25px;
 }
@@ -94,17 +95,20 @@
     position: relative;
     right: 20px;
     top: -2px;
+    cursor: pointer;
 }
 
 .btn-minus {
     position: relative;
     left: 20px;
+    cursor: pointer;
 }
 
 .bloc-btn2 {
     height: 50px;
     width: 280px;
     background: hsl(26, 100%, 55%);
+    cursor: pointer;
 }
 
 .bloc-btn2 img {

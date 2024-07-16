@@ -1,18 +1,6 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
-.App-header {
-  font-size: 1rem;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  padding-bottom: 2rem;
-}
 
-.carousel {
-  height: 100%;
-}
-
-.carousel-images {
-  position: relative;
+.carousel-images-mobile {
   border-radius: 10px;
   height: 450px;
   max-width: 450px;
@@ -20,24 +8,18 @@
   background: hsl(25, 100%, 94%);
 }
 
-.btn-close {
-  position: absolute;
-  left: 63%;
-  top: 70px;
-  cursor: pointer;
-}
-.carousel-images img {
+.carousel-images-mobile img {
   width: 99%;
   height: 99%;
   border-radius: 8px;
   border: hsl(0, 0%, 0%) solid 1px;
 }
-.slide_direction {
+.slide_direction-mobile {
   display: flex;
   justify-content: space-around;
 }
 
-.left {
+.left-mobile {
   position: relative;
   background-color: hsl(0, 0%, 100%);
   color: #fff;
@@ -48,7 +30,7 @@
   bottom: 350px;
   cursor: pointer;
 }
-.right {
+.right-mobile {
   position: relative;
   background-color: hsl(0, 0%, 100%);
   color: #fff;
@@ -59,32 +41,9 @@
  bottom: 350px;
  cursor: pointer;
 }
-.carousel-indicator {
+.carousel-indicator-mobile {
   margin-top: 5px;
   display: flex;
   justify-content: center;
 }
-.dot img {
-  background-color: #333;
-  width: 95px;
-  height: 95px;
-  margin-top: -90px;
-  border-radius: 10px;
-  margin-left: 25px;
-}
-.active{
-  box-shadow: inset 0px -5px 0px #c5c5c6;
-}
-
-.carousel-catalogue {
-  display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-left: -55px;
-    cursor: pointer;
-}
-
-
-
 

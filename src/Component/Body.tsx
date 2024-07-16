@@ -65,11 +65,11 @@ interface Props   {
                         <span className='old-price'>$250.00  </span>
                         <div className='bloc-btn'>
                             <button className='bloc-btn1'><span className='btn-plus'><img onClick={onDecrease} src={ iconMinus } alt="" /></span> {count}  <span className='btn-minus'><img onClick={onIncrease} src={iconPlus} alt="" /></span> </button>
-                            <button onClick={() => onAddProduct(count, BODY_PAGE.product)} className='bloc-btn2'><span><img src={iconCarte} alt="" /></span> <span>Add to cart</span> </button>
+                            <button  onClick={() => onAddProduct(count, BODY_PAGE.product)} className='bloc-btn2'><span style={{color: 'red'}}><img src={iconCarte} alt="" /></span> <span>Add to cart</span> </button>
                         </div>
                     </div>
                     {showBackground && <dialog open style={{
-                         position: 'absolute',
+                         position: 'fixed',
                          width: '100%',
                          height: '100%',
                          margin: '0',

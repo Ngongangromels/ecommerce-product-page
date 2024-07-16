@@ -1,22 +1,36 @@
-nav {
+.navbar-mobile{
     position: fixed;
-    width: 100%;
+    width: 400px;
     display: flex;
     align-items: center;
     padding: 15px 25px;
     height: 45px;
     background: hsl(0, 1%, 95%);
     box-shadow: inset 0px -2px 0px #c5c5c6;
+    z-index: 1000;
 }
 
-.logo-nav img {
+.btn-toggle-mobile {
+  position: fixed;
+  left: 3px;
+}
+ 
+
+
+.icon-toggle {
+ margin-left: -1px;
+ margin-top: 10px;
+}
+  
+
+.logo-nav-mobile img {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.nav-item {
-    margin: 0 3px;
+.nav-item-mobile {
+    margin: 10px -5px;
     font-size: 16px;
     font-weight: 500;
     color: hsl(0, 0%, 41%);
@@ -24,34 +38,25 @@ nav {
     list-style-type: none;
 }
 
-.nav-item li a{
+.nav-item-mobile li a{
   position: relative;
 }
-.nav-item a:after {
-  content: '.';
-  position: absolute;
-  bottom: -27px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  background: hsl(26, 100%, 55%);
-  height: 4px;
-}
-.nav-item li a:hover:after {
-  width: 100%;
-}
 
-
-.nav-item a{
+.nav-item-mobile a{
     text-decoration: none;
     color:hsl(0, 0%, 41%);;
 }
 
-.links-items{
+.links-items-mobile{
+  position: fixed;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    left: -18px;
+    height: 100%;
+    width: 200px;
+    background-color: hsl(0, 1%, 95%);
 }
 
 a:hover{
@@ -61,19 +66,19 @@ a:hover{
   }
 
 
-  .sign-btn{
-    width: 55%;
+  .sign-btn-mobile{
+    width: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
   }
 
-  .sign-btn button {
+  .sign-btn-mobile button {
     font-size: 16px;
     font-weight: 500;
     padding: 10px 1px;
-    margin: 0 3px;
+    margin: 0 1px;
     width: 105px;
     height: 40px;
     border-radius: 15px;
@@ -82,7 +87,7 @@ a:hover{
     background-color: hsl(0, 0%, 98%);
   }
 
-  .sign-btn p {
+  .sign-btn-mobile p {
     width: 105px;
     height: 40px;
     cursor: pointer;
@@ -92,25 +97,25 @@ a:hover{
     color: hsl(0, 0%, 8%);
     font-weight: bold;
   }
-  .sign-btn button:nth-child(1) {
+  .sign-btn-mobile button:nth-child(1) {
     border: none;
     background: hsl(0, 1%, 95%);;
   }
 
-  .sign-btn button:nth-child(2) {
+  .sign-btn-mobile button:nth-child(2) {
     border: none;
     background: hsl(0, 1%, 95%);;
   }
  
-  .avatar {
+  .avatar-mobile {
     border: 1px solid hsl(26, 100%, 55%);
     border-radius: 50%;
     position: absolute;
-    top: 10px;
-    height:50px ;
-    width: 50px;
+    top: 14px;
+    height:40px ;
+    width: 40px;
   }
-.cart-count {
+.cart-count-mobile {
   /* background: '', color: '', borderRadius: '50px', fontSize:'16px', position:'absolute',; */
   background-color: hsl(26, 100%, 55%);
   color: hsl(0, 1%, 0%);
@@ -121,4 +126,3 @@ a:hover{
 
   
 } 
-

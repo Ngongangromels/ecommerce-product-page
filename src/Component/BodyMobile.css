@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+.body-bloc-mobile {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.body-bloc1-mobile {
+    margin-top: -22px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+ .body-bloc2-mobile {
+    margin-top: -130px;
+    margin-right: 0px;
+    margin-left: 10px;
+ }
+
+
+.text-bloc-mobile {
+    font-size: 18px;
+    font-family: "Kumbh" sans-serif;
+    font-weight: 500;
+    color: hsl(220, 14%, 75%);
+
+}
+
+ h1 {
+    font-size: 30px;
+    
+}
+
+.price-product-mobile{
+    background-color: black;
+}
+
+
+
+.old-price-mobile {
+    text-decoration: line-through;
+    color: hsl(220, 14%, 40%);
+    font-weight: 490;
+    margin-left: 150px;
+}
+
+.discount-price-mobile {
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-left: 20px;
+    background: hsl(220, 13%, 13%);
+    border-radius: 4px;
+}
+
+.new-price-mobile {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.bloc-btn-mobile {
+    margin-top: 20px;
+}
+
+.bloc-btn-mobile button {
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.bloc-btn1-mobile {
+    height: 49px;
+    width: 370px;
+    background:  hsl(223, 64%, 98%);
+}
+
+.btn-plus-mobile {
+    position: relative;
+    left: -309px;
+    top: -2px;
+    cursor: pointer;
+}
+
+.btn-minus-mobile {
+    position: relative;
+    right: 130px;
+    cursor: pointer;
+}
+
+.bloc-btn2-mobile {
+    height: 50px;
+    width: 370px;
+    background: hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.bloc-btn2-mobile img {
+    color: hsl(220, 13%, 13%);
+    height: 15px;
+    width: 15px;
+}
+
+.bloc-btn2-mobile span {
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+}
+
+.carousel-images-mobile {
+    border-radius: 10px;
+    height: 395px;
+    max-width: 395px;
+    object-fit: cover;
+    margin: 100px auto;
+    background: hsl(25, 100%, 94%);
+  }
+  
+  .carousel-images-mobile img {
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    border: hsl(0, 0%, 0%) solid 1px;
+  }
+  .slide_direction-mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .left-mobile {
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    color: #fff;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    left: 40%;
+    bottom: 300px;
+    cursor: pointer;
+  }
+  .right-mobile {
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    color: #fff;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    right: 40%;
+   bottom: 300px;
+   cursor: pointer;
+  }
+ 
+  

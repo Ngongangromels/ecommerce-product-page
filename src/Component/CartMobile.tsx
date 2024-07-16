@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cart.css'
+import './CartMobile.css'
 import iconDelete  from '../images/iconDelete.svg'
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
     onDeleteProduct: (id: number) => void
 }
 
-export const  Cart: React.FC<Props> = ({cart, onCleanCart, onDeleteProduct}) =>{
+export const  CartMobile: React.FC<Props> = ({cart, onCleanCart, onDeleteProduct}) =>{
         const price = '125.00'
         const total = cart.reduce(
             (acc, cart) => acc + cart.count * 125.00,
@@ -49,4 +49,3 @@ export const  Cart: React.FC<Props> = ({cart, onCleanCart, onDeleteProduct}) =>{
     )
 }
 
-export default Cart
