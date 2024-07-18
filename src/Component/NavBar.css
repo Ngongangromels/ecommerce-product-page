@@ -28,7 +28,7 @@ nav {
   position: relative;
 }
 .nav-item a:after {
-  content: '.';
+  content: '';
   position: absolute;
   bottom: -27px;
   left: 0;
